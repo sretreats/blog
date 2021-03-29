@@ -29,6 +29,7 @@ jobs:
           pwd
           ls -lart
           git status
+          git config -l
           git add .
           git commit -m "${{ github.event.head_commit.message }}"
           git push origin main
